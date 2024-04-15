@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="178" viewBox="0 0 432 178">
+  <g id="Group_712" data-name="Group 712" transform="translate(-27 -379)">
+    <g id="Group_668" data-name="Group 668" transform="translate(7.064 38.677)">
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="432" height="178" transform="translate(19.936 340.323)" fill="#7c7b7b"/>
+      <g id="Group_658" data-name="Group 658" transform="translate(180.936 400.622)">
+        <g id="Rectangle_641" data-name="Rectangle 641" transform="translate(0 -0.298)" fill="none" stroke="#fff" stroke-width="1">
+          <rect width="94" height="58" stroke="none"/>
+          <rect x="0.5" y="0.5" width="93" height="57" fill="none"/>
+        </g>
+        <g id="Group_655" data-name="Group 655" transform="translate(18.132 14.207)">
+          <g id="Polygon_1" data-name="Polygon 1" transform="translate(-0.132 7.495)" fill="#d5d5d5">
+            <path d="M 40.13989639282227 35.5 L 0.8601041436195374 35.5 L 20.5 1.010426878929138 L 40.13989639282227 35.5 Z" stroke="none"/>
+            <path d="M 20.5 2.020854949951172 L 1.720207214355469 35 L 39.27979278564453 35 L 20.5 2.020854949951172 M 20.5 0 L 41 36 L 0 36 L 20.5 0 Z" stroke="none" fill="#fff"/>
+          </g>
+          <g id="Polygon_2" data-name="Polygon 2" transform="translate(18.868 0.495)" fill="#ecebeb">
+            <path d="M 56.06875228881836 42.5 L 0.9312480092048645 42.5 L 28.5 0.9050408601760864 L 56.06875228881836 42.5 Z" stroke="none"/>
+            <path d="M 28.5 1.810081481933594 L 1.862495422363281 42 L 55.13750457763672 42 L 28.5 1.810081481933594 M 28.5 0 L 57 43 L 0 43 L 28.5 0 Z" stroke="none" fill="#fff"/>
+          </g>
+        </g>
+        <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(15 7.702)" fill="#a0a0a0" stroke="#fff" stroke-width="1">
+          <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+          <circle cx="10.5" cy="10.5" r="10" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_673" data-name="Group 673" transform="translate(13.406 -8.04)">
+      <g id="Group_671" data-name="Group 671" transform="translate(390.784 452.276)">
+        <line id="Line_2" data-name="Line 2" x2="25.127" y2="25.764" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+        <line id="Line_3" data-name="Line 3" x1="25.127" y2="25.764" transform="translate(0 25.764)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+      </g>
+      <g id="Group_672" data-name="Group 672" transform="translate(37.276 452.276)">
+        <line id="Line_2-2" data-name="Line 2" x1="25.127" y2="25.764" transform="translate(0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+        <line id="Line_3-2" data-name="Line 3" x2="25.127" y2="25.764" transform="translate(0 25.764)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>
