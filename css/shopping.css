@@ -227,7 +227,7 @@ header{
 
 
 #s-section3 div h2{
-   filter: 2px 2px 4px rgba(0, 0, 0, 1);
+   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1 ));
    
 }
 
@@ -639,8 +639,8 @@ margin: 31px 0px -25px 16px;
 .p2,
 .p3,
 .p4 {
-   width: calc(51% - px); /* Adjust as needed */
-   height: 21em;
+   width: calc(51%) ; /* Adjust as needed */
+   height: 21em ; 
    /* margin-right: 10px; 
    margin-bottom: 10px; */
 }
@@ -706,7 +706,7 @@ margin: 31px 0px -25px 16px;
 /*  */
 
 #s-section3 div h2{
-   filter: 2px 2px 4px rgba(0, 0, 0, 1);
+   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1)) ;
    
 }
 
