@@ -11,6 +11,15 @@ body{
 }
 
 
+
+/* pop up for log-in */
+
+
+
+
+/*  */
+
+
 /* line-s-m = line seperator mobile */
 /* line-s2-m = line seperator 2 mobile */
 
@@ -49,6 +58,7 @@ a {
 .banner1-t{
    display: none;
 }
+
 
 
 /* -----------BLUR--------- */
@@ -109,9 +119,13 @@ header{
    
 }
 
+#sign-in-m img{
+   width: 40px;
+}
+
 #sign-in-m {
-   margin-top: 7px;
-   margin-left: -6px;
+   margin-top: 10px;
+    margin-left: 5px;
    width: 100px;
 }
 
@@ -134,6 +148,129 @@ header{
    margin-right: 20px;
 }
 
+
+
+/*  /////////////////login popup///////////////// */
+
+
+.log-in {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+  transform: translate(-22%, -180%) scale(0);
+   transition: 200ms ease-in-out;
+   /* border: 1px solid black; */
+   border-radius: 10px;
+   z-index: 10;
+   background-color: white;
+   width: 500px;
+   max-width: 80%;
+ }
+ 
+ .log-in.active {
+   transform: translate(-44%, -46%) scale(1);
+   
+ }
+ 
+ .log-in-header {
+   height: 100px;
+   padding: 17px 17px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   margin: 27px -30px 8px -5px;
+ }
+ 
+ .log-in-header .title {
+   font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .log-in-header .close-button {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background: none;
+   font-size: 1.25rem;
+   font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ /*  buttons*/
+ .log-in-body button {
+   padding: 10px 20px;
+   margin: 5px 0 0 0;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .log-in-body button.login-button {
+   height: 4em;
+   width: 7em;
+   background-color: black;
+   color: white;
+ }
+ 
+ 
+ .log-in-body button.login-button:hover {
+   background-color: darkgrey;
+ }
+ 
+ 
+ .log-in-body button.signin-button {
+   height: 4em;
+   width: 7em;
+   background-color: rgb(202, 202, 202);
+   color: black;
+ }
+ 
+ .log-in-body button:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+ }
+ 
+ 
+ 
+ 
+ .log-in-body {
+   display: flex;
+     padding: 23px 15px;
+     justify-content: center;
+ 
+ }
+ 
+ 
+ .log-in-body button{
+   margin: 10px;
+ }
+ 
+ #overlay {
+   position: fixed;
+   opacity: 0;
+   transition: 200ms ease-in-out;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, .5);
+   pointer-events: none;
+ }
+ 
+ #overlay.active {
+   opacity: 1;
+   pointer-events: all;
+ }
+ 
+ 
+ /* ///////// */
 /* ---------------------section1----------- */
 
 .logo-m{
@@ -232,19 +369,24 @@ margin-right: 25px;
 }
 
 
+
+
+
+
 /* ----------section2 button------- */
 
 .shop-m{
-   background-color: #4CAF50; 
-   color: white; 
-   border: none; 
-   padding: 10px 20px;
-   cursor: pointer; 
-   border-radius: 5px; 
-   transition: background-color 0.3s; 
-   margin-top: 14px;
-   margin-right: 30px;
-   margin-bottom:-19px ;
+   margin-left: 69px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 32px;
+    margin-right: 51px;
+    margin-bottom: -19px;
 }
 
 .shop-m:hover {
@@ -254,6 +396,75 @@ margin-right: 25px;
 .shop-m:active {
    background-color: #3e8e41; 
 }
+
+
+/* section 2light box */
+
+
+/* ////////light box for product cards */
+
+.lightbox {
+   display: none;
+   position: fixed;
+   z-index: 999;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   justify-content: center; /* Center horizontally */
+   align-items: center; /* Center vertically */
+    /* Make it flex container */
+}
+
+.lightbox-content {
+   max-width: 102%;
+   max-height: 90%;
+}
+
+.close-btn {
+   color: #fff;
+   font-size: 30px;
+   cursor: pointer;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
+
+
+
+ /* ---------------Section2 ----------*/
+
+.banner1-m {
+   display: none;
+}
+
+
+
+.banner1-t {
+   display: block;
+    position: relative;
+    width: 304px;
+    height: 206px;
+    margin-top: -206px;
+    margin-left: 4px;
+    background-image: url(../images/banner1-t.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.s2t {
+   text-align: left;
+   height: 205px;
+   width: 307px;
+   margin-left: -13px;
+   margin-top: 11px;
+   border-radius: 17px;
+}
+
 
 
 /* ----------------SECTION3----------------- */
@@ -349,8 +560,25 @@ padding: 12px;
    margin: 10px;
 }
 
+
+.vid::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(240, 248, 255, 0.5);
+   backdrop-filter: blur(11px);
+   -webkit-backdrop-filter: blur(8.5px);
+   z-index: -1;
+   border-radius: inherit;
+   opacity: 0;
+}
+
 .vid{
-   border-radius: 17px;
+   border-radius: 20px;
+   border: none;
 }
 
 .vid img{
@@ -358,7 +586,10 @@ padding: 12px;
 
 }
 
-
+#section5 video{
+   width: 100%;
+   border-radius: 10px;
+}
 /* ----------------SECTION6----------------- */
 
 #section6 div{
@@ -592,6 +823,8 @@ margin: 31px 0px -25px 16px;
    margin: 24px;
 }
 
+
+
 .nav-m {
    width: 638px;
    height: 82px;
@@ -624,6 +857,15 @@ margin: 31px 0px -25px 16px;
 }
 
 
+#sign-in-m img{
+   width: 67px;
+}
+
+#sign-in-m {
+   margin-top: 14px;
+    margin-left: -2px;
+   width: 100px;
+}
 
 #sign-in-m {
    margin-top: 10px;
@@ -643,16 +885,14 @@ margin: 31px 0px -25px 16px;
 /* ---------------------section1----------- */
 
 .logo-m{
-   width: 29vh;
-   height: 25vh;
+   width: 114%;
+   height: 23vh;
    margin-left: 0px;
    margin-top: 0px;
-
-   display: flex;
-   justify-content: center; 
+   /* display: flex; */
+   justify-content: center;
    align-items: center;
-   border-radius: 17px;    
-
+   border-radius: 17px;
 }
 
 .logo-m img{
@@ -663,20 +903,20 @@ margin: 31px 0px -25px 16px;
 
 #section1 .blur:nth-child(2) {
    text-align: center;
-   height: 185px; 
-   width: 198px;
-   margin-left: -9px;
+   height: 211px;
+   width: 136%;
+   margin-left: 18%;
    margin-top: 0px;
-   border-radius: 17px;   
+   border-radius: 17px;
 }
 
 #section1 .blur:nth-child(3) {
    text-align: center;
-   height: 185px; 
-   width: 264px; 
-   margin-left: 31px;
+   height: 210px;
+   width: 93%;
+   margin-left: 39%;
    margin-top: 0px;
-   border-radius: 17px;   
+   border-radius: 17px;
 }
 
 /* ----------------SECTION2 ----------------- */
@@ -1042,6 +1282,126 @@ margin: 19px 7px -11px 2px;
 
 
 
+/*  /////////////////login popup///////////////// */
+
+
+.log-in {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+  transform: translate(12%, -164%) scale(0);
+   transition: 200ms ease-in-out;
+   /* border: 1px solid black; */
+   border-radius: 10px;
+   z-index: 10;
+   background-color: white;
+   width: 500px;
+   max-width: 80%;
+ }
+ 
+ .log-in.active {
+   transform: translate(-44%, -46%) scale(1);
+   
+ }
+ 
+ .log-in-header {
+   height: 100px;
+   padding: 17px 17px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   margin: 27px -30px 8px -5px;
+ }
+ 
+ .log-in-header .title {
+   font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .log-in-header .close-button {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background: none;
+   font-size: 1.25rem;
+   font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ /*  buttons*/
+ .log-in-body button {
+   padding: 10px 20px;
+   margin: 5px 0 0 0;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .log-in-body button.login-button {
+   height: 4em;
+   width: 7em;
+   background-color: black;
+   color: white;
+ }
+ 
+ 
+ .log-in-body button.login-button:hover {
+   background-color: darkgrey;
+ }
+ 
+ 
+ .log-in-body button.signin-button {
+   height: 4em;
+   width: 7em;
+   background-color: rgb(202, 202, 202);
+   color: black;
+ }
+ 
+ .log-in-body button:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+ }
+ 
+ 
+ 
+ 
+ .log-in-body {
+   display: flex;
+     padding: 23px 15px;
+     justify-content: center;
+ 
+ }
+ 
+ 
+ .log-in-body button{
+   margin: 10px;
+ }
+ 
+ #overlay {
+   position: fixed;
+   opacity: 0;
+   transition: 200ms ease-in-out;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   pointer-events: none;
+ }
+ 
+ #overlay.active {
+   opacity: 1;
+   pointer-events: all;
+ }
+ 
+ 
+ /* ///////// */
 
 /* ------------------------------------------------------- */
 
@@ -1172,67 +1532,36 @@ margin: 19px 7px -11px 2px;
    /* ---------------Section1 ----------*/
 
    .logo-m {
-      width: 48vh;
-      height: 25vh;
-      margin-left: 76px;
-      margin-top: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 17px;
+        width: 48vh;
+    height: 25vh;
+    margin-left: 25px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
   }
 
 
   #section1 .blur:nth-child(2) {
-   text-align: center;
-   height: 185px;
-   width: 293px;
-   margin-left: -62px;
-   margin-top: 0px;
-   border-radius: 17px;
+  text-align: center;
+    height: 228px;
+    width: 293px;
+    margin-left: -12px;
+    margin-top: 0px;
+    border-radius: 17px;
 }
 
 #section1 .blur:nth-child(3) {
    text-align: center;
-   height: 185px;
-   width: 48vh;
-   margin-left: -57px;
-   margin-top: 0px;
-   border-radius: 17px;
+    height: 229px;
+    width: 43vh;
+    margin-left: 14px;
+    margin-top: 0px;
+    border-radius: 17px;
 }
 
 
-
- /* ---------------Section2 ----------*/
-
-.banner1-m {
-   display: none;
-}
-
-
-
-.banner1-t {
-   display: block;
-   position: relative;
-   width: 572px;
-   height: 387px;
-   margin-top: -380px;
-   margin-left: 76px;
-   background-image: url(../images/banner1-t.png);
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-
-
-
-.s2t {
-   text-align: left;
-   height: 380px;
-   width: 573px;
-   margin-left: -66px;
-   margin-top: 11px;
-   border-radius: 17px;
-}
 
 
 
@@ -1279,7 +1608,13 @@ font-size: 51px;
 
 }
 
+
+#section4-b img {
+   width: 90%;
+   margin-left: 27%;
+
   
+}
 /* -------------------FOOTER------------ */
 
 
@@ -1425,6 +1760,131 @@ font-size: 51px;
    }
    
 
+/*  /////////////////login popup///////////////// */
+
+
+.log-in {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+  transform: translate(12%, -164%) scale(0);
+   transition: 200ms ease-in-out;
+   /* border: 1px solid black; */
+   border-radius: 30px;
+   z-index: 10;
+   background: linear-gradient(135deg, #ed5934, #92ec2b);
+   
+   width: 500px;
+   max-width: 80%;
+ }
+ 
+
+
+
+
+ .log-in.active {
+   transform: translate(-44%, -46%) scale(1);
+   
+ }
+ 
+ .log-in-header {
+   height: 100px;
+   padding: 17px 17px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   margin: 27px -30px 8px -5px;
+ }
+ 
+ .log-in-header .title {
+   font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .log-in-header .close-button {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background: none;
+   font-size: 1.25rem;
+   font-weight: bold;
+ }
+ 
+ 
+ 
+ 
+ /*  buttons*/
+ .log-in-body button {
+   padding: 10px 20px;
+   margin: 5px 0 0 0;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .log-in-body button.login-button {
+   height: 4em;
+   width: 7em;
+   background-color: black;
+   color: white;
+ }
+ 
+ 
+ .log-in-body button.login-button:hover {
+   background-color: darkgrey;
+ }
+ 
+ 
+ .log-in-body button.signin-button {
+   height: 4em;
+   width: 7em;
+   background-color: rgb(202, 202, 202);
+   color: black;
+ }
+ 
+ .log-in-body button:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+ }
+ 
+ 
+ 
+ 
+ .log-in-body {
+   display: flex;
+     padding: 23px 15px;
+     justify-content: center;
+ 
+ }
+ 
+ 
+ .log-in-body button{
+   margin: 10px;
+ }
+ 
+ #overlay {
+   position: fixed;
+   opacity: 0;
+   transition: 200ms ease-in-out;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   pointer-events: none;
+ }
+ 
+ #overlay.active {
+   opacity: 1;
+   pointer-events: all;
+ }
+ 
+ 
+ /* ///////// */
  /* ------------------------------------------------- */
   
 

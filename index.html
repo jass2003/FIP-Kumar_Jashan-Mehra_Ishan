@@ -21,7 +21,7 @@
             <div class="blur nav-m col-start-1 col-end-4 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4 grid-con">
 
                 <div id="hamburger-menu" class="col-start-1 col-end-2 header-content">
-                    <a href="home.html"> <img src="images/leaf.svg" alt=""></a>
+                    <a href="index.html"> <img src="images/leaf.svg" alt=""></a>
                 </div>
 
 
@@ -41,10 +41,39 @@
                
 
                 <div id="sign-in-m" class=" col-start-4 col-end-5 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 header-content" >
-                    <a href="#"> <img src="images/log-in.svg" alt=""></a>
+
+                    <!-- <a href="#"> <img src="images/log-in.svg" alt=""></a> -->
+
+
+                    <a href="#log-in" data-modal-target="#log-in">
+                        <img src="images/log-in.svg" alt="Open Modal">
+                      </a>
+                    
+                     
                </div>
 
             </div>
+<!-- ____________________________ -->
+
+
+ <div class="log-in" id="log-in">
+    <div class="log-in-header">
+      <div class="title">Sign in for exclusive offers or Login to unlock more deals</div>
+     
+    </div>
+    <div class="log-in-body">
+     
+      <button class="login-button">Log In</button>
+      <button class="signin-button"> Sign In</button>
+    </div>
+  </div>
+  <div id="overlay"></div>
+   
+
+
+
+<!-- _____________________________ -->
+
 
           </header>
 
@@ -110,7 +139,25 @@
             
        
             <!-- Section3 -->
-            <section  id="section3" class="grid-con">
+
+
+
+            <section id="section3" class="grid-con">
+                <h2 class="hidden">section 3 product cards</h2>
+                <div class="blur b1 col-span-full m-col-span-full l-col-span-full">
+                    <img id="initial-img" src="images/P-banner2-m.png" alt="banner2-m">
+                    <button class="details-m m-col-start-1 m-col-end-3" onclick="openLightbox()">View Details</button>
+                </div>
+            </section>
+            
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" class="lightbox-content">
+            </div>
+            
+
+            
+            <!-- <section  id="section3" class="grid-con">
                 
                 <h2 class="hidden"> section 3 product cards </h2>
                 
@@ -121,14 +168,26 @@
                    
 
 
-                    <button class="details-m m-col-start-1 m-col-end-3" >View Details</button>
+                    <button class="details-m m-col-start-1 m-col-end-3" onclick="openLightbox()">View Details</button>
+
 
                 </div>
 
                
 
-            </section>
+            </section> -->
             
+
+            <!-- lightbox for section3 and for product cards -->
+
+
+<!-- <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="images/passion-productcard-tab.png" alt="passionfruit-productcard-">
+    
+</div> -->
+
+
 <!--  -->
          
             <!-- Section4 -->
@@ -167,7 +226,7 @@
             
 <!---section 7 and 4 for animation -->
 
- <div class="animation">
+ <div class="animation ">
     <!-- Section4 -->
     <section id="section4-b" class="grid-con">
         <h2 class="hidden"> animation forSection4  </h2>
@@ -182,6 +241,7 @@
 
        
     </section>
+
 
    
 
@@ -213,8 +273,9 @@
             <section id="section5" class="grid-con"> 
                 <h2 class="hidden"> video box </h2>
 
-                <div class="vid blur col-span-full"> 
-                    <img  src="images/play-button.png" alt="">
+                <div class="vid blur col-span-full">
+                     <video src="video/promotion video.mp4"></video>
+                    <!-- <img  src="images/play-button.png" alt=""> -->
                 </div>
 
 
@@ -360,7 +421,7 @@
 
 
 
-
+<script src="js/main.js"> </script>
 
     </body>
 </html>

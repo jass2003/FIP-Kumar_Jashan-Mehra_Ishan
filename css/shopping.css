@@ -197,6 +197,11 @@ header{
    height: 21em;
 }
 
+.p1 img, .p2 img, .p3 img, .p4 img {
+ width: 100%;
+ height: auto;
+}
+
 #s-section2-m div > div:nth-child(2){
    /* border-radius: 10px  10px 0 0; */
    background-image: linear-gradient( #FFE24E, #C8A906);

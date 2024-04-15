@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
    
     <link href="css/shopping.css" rel="stylesheet">
+    <link href="css/3d-view.css" rel="stylesheet">
     <title>Shopping Page</title>
 </head>
 
@@ -92,10 +93,18 @@
              <div  class="blur p col-span-full">
 
                 <h2>FEUTURED PRODUCTS</h2>
-                 <div class="p1"> </div>
-                 <div class="p2"></div>
-                 <div class="p3"></div>
-                 <div class="p4"></div>
+                 <div class="p1" >
+                    <img src="images/Quatro-poster.png" alt="">
+                 </div>
+
+
+
+                 <div class="p2"><img src="images/Quatro-poster.png" alt="">
+                </div>
+
+
+                 <div class="p3"><img src="images/Quatro-poster.png" alt=""></div>
+                 <div class="p4"><img src="images/Quatro-poster.png" alt=""></div>
                     
             </div>
 
@@ -158,6 +167,29 @@
 
 
         </main>
+
+
+        
+    <div id="app" class="container">
+
+        <card data-image="images/product-passion.png">
+          <h1 slot="header">Pasion Burst</h1>
+          <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+  
+        <card data-image="images/product-grape.png">
+          <h1 slot="header">Grapefruit  Fizz</h1>
+          <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card data-image="images/product-orange.png">
+          <h1 slot="header">Orange Tang</h1>
+          <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card data-image="images/product-pine.png">
+          <h1 slot="header">Tropical pine burst</h1>
+          <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+      </div>
 
         <!-- FOOOTER -->
         
@@ -247,8 +279,8 @@
 
 
 
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+        <script src="js/3d.js"></script>
 
     </body>
 </html>
