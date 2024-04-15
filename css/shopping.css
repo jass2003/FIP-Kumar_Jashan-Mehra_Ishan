@@ -181,8 +181,10 @@ header{
 }
 
 #s-section2-m h2{
-   font-size: 23px;
-   margin-left: 13px;
+  
+      font-size: 32px;
+      padding-top: 34px;
+  
 }
 
 #s-section2-m .p{
@@ -256,10 +258,19 @@ header{
  
  
 
+/* #s-section3  img:nth-child(1) {
+   
+   width: 100%;
+} */
+
 #s-section3  img:nth-child(1) {
+   
+   border-radius: 13px;
    margin: 20px 0 20px 0 ;
    width: 100%;
+
 }
+
 
 #s-section3 p{
    margin:0px 10px 10px 10px; ;
@@ -729,10 +740,14 @@ margin: 31px 0px -25px 16px;
  
  
 
-#s-section3  img:nth-child(1) {
-   margin: 0 ;
+ #s-section3  img:nth-child(1) {
+   
+   border-radius: 13px;
+   margin: 0;
    width: 100%;
+
 }
+
 
 #s-section3 p{
    text-align: left;

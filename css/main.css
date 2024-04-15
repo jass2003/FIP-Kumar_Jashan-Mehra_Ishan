@@ -1601,6 +1601,27 @@ margin: 19px 7px -11px 2px;
 
 font-size: 51px;
 }
+#section7-b div {
+   border-radius: 17px;
+   margin-bottom: 10px;
+   display: flex;
+   border-radius: 17px;
+   margin-bottom: 10px;
+   flex-wrap: wrap;
+   /* justify-content: flex-start; */
+   flex-direction: column;
+   /* align-content: space-around; */
+   align-items: center;
+}
+
+
+#section7-b {
+   height: 98%;
+   flex: 1;
+   margin: 30px 337px 13px 10px;
+   transition: flex 0.5s ease;
+   cursor: pointer;
+}
 
 #section7-b p {
     font-size: 139%;
@@ -1610,8 +1631,8 @@ font-size: 51px;
 
 
 #section4-b img {
-   width: 90%;
-   margin-left: 27%;
+   width: 67%;
+   margin-left: 45%;
 
   
 }
