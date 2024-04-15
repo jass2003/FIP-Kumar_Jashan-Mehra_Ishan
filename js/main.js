@@ -8,9 +8,6 @@ document.getElementById("scrollToTop").addEventListener("click", function(event)
     });
 
 
-
-
-
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -43,6 +40,73 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  document.getElementById("hamburger-img").addEventListener("click", function() {
-    this.style.transform = "rotate(10deg)";
+// login ------------->
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
 });
+
+// Add event listener for click event on the button with class "log-in-m"
+document.querySelector('.log-in-m').addEventListener('click', () => {
+  const modal = document.querySelector('#log-in');
+  openModal(modal);
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.log-in.active');
+  modals.forEach(modal => {
+    closeModal(modal);
+  });
+});
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
+
+
+// buttons------------------>
+
+var buttons = document.getElementsByClassName("shop-m");
+  for (var i = 0; i < buttons.length; i++) { 
+    buttons[i].onclick = function() {
+      location.href = "shopping.html";
+    };
+  }
+
+
+  // product card lightbox
+
+  function openLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var initialImgSrc = document.getElementById('initial-img').src;
+    var newImgSrc = "images/passion-productcard-desk.png"; // Change this to the desired image source
+    lightbox.style.display = 'flex';
+    lightboxImg.src = newImgSrc;
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
