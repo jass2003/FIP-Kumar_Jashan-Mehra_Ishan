@@ -270,6 +270,7 @@ header{
  }
  
  
+ 
  /* ///////// */
 /* ---------------------section1----------- */
 
@@ -482,15 +483,38 @@ margin-right: 25px;
    display: block;
 }
 
-#section3  img{
+/* #section3  img{
    width: 100%;
    margin-top: -7px;
-}
+} */
 
 .b1{
-   border-radius: 17px;
+   position: relative;
+      width: 96%;
+      height: 20em;
+      background: radial-gradient(circle, #BA64A5, #5D3253);
+      background-position: top;
+      background-size: 100% 80%;
+      border-radius: 17px;
+  
 }
 
+
+/* can animation */
+
+#p-txt{
+       top: 61px;
+    left: 16px;
+    width: 95%;
+    position: absolute;
+}
+
+#p-img{
+   top: 30px;
+    left: 13px;
+    width: 80%;
+    position: absolute;
+}
 
 /* ----------section3 button------- */
 
@@ -503,7 +527,7 @@ margin-right: 25px;
    border-radius: 5px; 
    transition: background-color 0.3s; 
    font-size: 93%;
-   margin: -2px 0px 7px 15px;
+   margin: 270px 0px 7px 15px;
    width: 116px;
    
 }
@@ -1022,7 +1046,7 @@ margin-right: 25px;
    border-radius: 5px; 
    transition: background-color 0.3s; 
    font-size: 93%;
-   margin: 304px 3px 13px 20px;
+   margin: 329px  3px 13px 20px;
    width: 119px;
    height: 50px;
    
@@ -1124,7 +1148,23 @@ margin-right: 25px;
    padding: 12px;
 }
 
-/*  */
+
+/* can animation */
+
+#p-txt{
+   top: 26px;
+    left: 33px;
+    width: 91%;
+    position: absolute;
+}
+
+
+#p-img{
+   top: -4px;
+   left: 69px;
+   width: 74%;
+   position: absolute;
+}
 
 #section7-b p {
     font-size: 106%;
@@ -1401,7 +1441,7 @@ margin: 19px 7px -11px 2px;
  }
  
  
- /* ///////// */
+ 
 
 /* ------------------------------------------------------- */
 
@@ -1532,33 +1572,33 @@ margin: 19px 7px -11px 2px;
    /* ---------------Section1 ----------*/
 
    .logo-m {
-        width: 48vh;
-    height: 25vh;
-    margin-left: 25px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 17px;
+      width: 54vh;
+      height: 30vh;
+      margin-left: 25px;
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 17px;
   }
 
 
   #section1 .blur:nth-child(2) {
-  text-align: center;
-    height: 228px;
-    width: 293px;
-    margin-left: -12px;
-    margin-top: 0px;
-    border-radius: 17px;
+   text-align: center;
+   height: 233px;
+   width: 314px;
+   margin-left: -29px;
+   margin-top: 0px;
+   border-radius: 17px;
 }
 
 #section1 .blur:nth-child(3) {
    text-align: center;
-    height: 229px;
-    width: 43vh;
-    margin-left: 14px;
-    margin-top: 0px;
-    border-radius: 17px;
+   height: 229px;
+   width: 43vh;
+   margin-left: 14px;
+   margin-top: 0px;
+   border-radius: 17px;
 }
 
 
@@ -1602,23 +1642,24 @@ margin: 19px 7px -11px 2px;
 font-size: 51px;
 }
 #section7-b div {
-   border-radius: 17px;
-   margin-bottom: 10px;
-   display: flex;
-   border-radius: 17px;
-   margin-bottom: 10px;
-   flex-wrap: wrap;
-   /* justify-content: flex-start; */
-   flex-direction: column;
-   /* align-content: space-around; */
-   align-items: center;
+   margin-left: 48px;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    /* align-content: space-around; */
+    align-items: center;
 }
 
 
 #section7-b {
-   height: 98%;
-   flex: 1;
-   margin: 30px 337px 13px 10px;
+   height: 100%;
+   /* flex: 1; */
+   margin: 31px 148px 13px 99px;
    transition: flex 0.5s ease;
    cursor: pointer;
 }
@@ -1631,10 +1672,32 @@ font-size: 51px;
 
 
 #section4-b img {
-   width: 67%;
-   margin-left: 45%;
+   width: 90%;
+    margin-left: 26%;
 
   
+}
+
+#section4-b div {
+   border-radius: 17px;
+   margin-bottom: 10px;
+}
+
+/* can animations */
+
+
+#p-txt{
+   top: 47px;
+   left: 225px;
+   width: 64%;
+   position: absolute;
+}
+
+#p-img{
+   top: 14px;
+   left: 274.4px;
+   width: 49%;
+   position: absolute;
 }
 /* -------------------FOOTER------------ */
 
