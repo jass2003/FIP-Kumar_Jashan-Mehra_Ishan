@@ -92,32 +92,59 @@ var buttons = document.getElementsByClassName("shop-m");
   }
 
 
-  // product card lightbox
-
-//   function openLightbox() {
-//     var lightbox = document.getElementById('lightbox');
-//     var lightboxImg = document.getElementById('lightbox-img');
-//     var initialImgSrc = document.getElementById('initial-img').src;
-//     var newImgSrc = "images/passion-productcard-desk.png"; // Change this to the desired image source
-//     lightbox.style.display = 'flex';
-//     lightboxImg.src = newImgSrc;
-// }
-
-// function closeLightbox() {
-//     document.getElementById('lightbox').style.display = 'none';
-// }
 
 
+//  Image slider
 
+
+var images = ["images/passion-productcard-desk.png", "images/Orange-productcard-desk.png", "images/pineapple-productcard-desk.png" , "images/grapefruit-productcard-desk.png" ]; 
+var currentSlide = 0;
 
 function openLightbox() {
-  var lightbox = document.getElementById('lightbox');
-  var lightboxImg = document.getElementById('lightbox-img');
-  var newImgSrc = "images/passion-productcard-desk.png"; // Change this to the desired image source
-  lightbox.style.display = 'flex';
-  lightboxImg.src = newImgSrc;
+    var lightbox = document.getElementById('lightbox');
+    var lightboxSlider = document.querySelector('.lightbox-slider');
+    lightbox.style.display = 'flex';
+    
+    // Clear existing images
+    lightboxSlider.innerHTML = '';
+
+    // Add images to lightbox slider
+    for (var i = 0; i < images.length; i++) {
+        var img = document.createElement('img');
+        img.src = images[i];
+        lightboxSlider.appendChild(img);
+    }
+
+    showSlide(currentSlide);
 }
 
 function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
+    document.getElementById('lightbox').style.display = 'none';
 }
+
+function showSlide(slideIndex) {
+    var slides = document.querySelectorAll('.lightbox-slider img');
+    currentSlide = slideIndex;
+
+    if (slideIndex >= slides.length) {
+        currentSlide = 0;
+    }
+    if (slideIndex < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    slides[currentSlide].style.display = 'block';
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
