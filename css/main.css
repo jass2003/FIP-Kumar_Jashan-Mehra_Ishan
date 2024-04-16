@@ -1601,10 +1601,32 @@ margin: 19px 7px -11px 2px;
    border-radius: 17px;
 }
 
+ /* ---------------Section2  ----------*/
+
+ .banner1-t {
+   margin-left: 20px;
+   display: block;
+   position: relative;
+   width: 603px;
+   height: 268px;
+   margin-top: -412px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 
 
 
-
+.banner1-t img{
+   width: 100%;
+}
+.s2t {
+   text-align: left;
+   height: 411px;
+   width: 531px;
+   margin-left: 20px;
+   margin-top: 11px;
+   border-radius: 17px;
+}
  /* ---------------Section2 button ----------*/
 
 .shop-m {
