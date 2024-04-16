@@ -147,56 +147,30 @@
             <section id="section3" class="grid-con">
                 <h2 class="hidden">section 3 product cards</h2>
                 <div class="blur b1 col-span-full m-col-span-full l-col-span-full">
-
-                    <img id="p-txt" src="images/passion-text.png" alt="">
-                    <img id="p-img" src="images/passsion-can.png" alt="">
-                    <!-- Removed the initial image -->
-
+                    <div class="passion-img">
+                        <!-- Images will be dynamically loaded here -->
+                        <img id="p-txt" src="images/passion-text.png" alt="">
+                        <img id="p-img" src="images/passsion-can.png" alt="">
+                        <!-- Removed the initial image -->
+                    </div>
                     <button class="details-m m-col-start-1 m-col-end-3" onclick="openLightbox()">View Details</button>
                 </div>
             </section>
             
-
-
-            <!-- product- card -->
+            <!-- Lightbox structure -->
             <div id="lightbox" class="lightbox">
                 <span class="close-btn" onclick="closeLightbox()">&times;</span>
-                <img id="lightbox-img" class="lightbox-content">
+                <div class="lightbox-content">
+                    <div class="lightbox-slider">
+                        <!-- Images will be dynamically loaded here -->
+                    </div>
+                    <div class="lightbox-controls">
+                        <button class="prev-slide" onclick="prevSlide()">&#10094;</button>
+                        <button class="next-slide" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
             </div>
             
-            
-
-            
-            <!-- <section  id="section3" class="grid-con">
-                
-                <h2 class="hidden"> section 3 product cards </h2>
-                
-
-                <div  class="blur b1 col-span-full m-col-span-full l-col-span-full">
-                    <img id="img1" src="images/P-banner2-m.png" alt="banner2-m">
-
-                   
-
-
-                    <button class="details-m m-col-start-1 m-col-end-3" onclick="openLightbox()">View Details</button>
-
-
-                </div>
-
-               
-
-            </section> -->
-            
-
-            <!-- lightbox for section3 and for product cards -->
-
-
-<!-- <div id="lightbox" class="lightbox">
-    <span class="close-btn" onclick="closeLightbox()">&times;</span>
-    <img id="lightbox-img" class="lightbox-content" src="images/passion-productcard-tab.png" alt="passionfruit-productcard-">
-    
-</div> -->
-
 
 <!--  -->
          
@@ -430,7 +404,7 @@
 
 
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/main.js"> </script>
 
     </body>
